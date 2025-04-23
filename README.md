@@ -40,14 +40,6 @@ Este projeto tem como objetivo visualizar dados atualizados sobre a realidade br
 
 ## 🌐 Publicação via GitHub Pages
 
-Este projeto está hospedado gratuitamente via GitHub Pages e funciona 100% em front-end.
-
-🔐 **Observação**: As chaves de API estão expostas no código (por limitação da plataforma). Recomenda-se utilizar chaves gratuitas com limite de uso e nenhuma permissão crítica.
-
-🌍 Acesse a versão online em: [https://seu-usuario.github.io/seu-projeto/](## 🌐 Publicação via GitHub Pages
-
-Este projeto está hospedado gratuitamente via GitHub Pages e funciona 100% em front-end.
-
 🔐 **Observação**: As chaves de API estão expostas no código (por limitação da plataforma). Recomenda-se utilizar chaves gratuitas com limite de uso e nenhuma permissão crítica.
 
 🌍 Acesse a versão online em: [https://github.com/elias001011/Dashboard-Brasil/](https://elias001011.github.io/Dashboard-Brasil/)
