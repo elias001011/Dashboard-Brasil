@@ -1,47 +1,125 @@
-# 🌐 Dashboard Brasil - Dados em Tempo Real
+# Dashboard Brasil - Real-Time Data Visualization
 
-Uma dashboard interativa e responsiva que apresenta **indicadores climáticos, econômicos, demográficos e ambientais do Brasil**, com integração a **APIs públicas** para exibição de dados em tempo real.
+A responsive web dashboard that displays real-time data about Brazil, including weather, economic indicators, population statistics, and environmental data.
 
----
+## Features
 
-## 🧭 Visão Geral
+- **Real-time Weather Data**: Get current weather information for Brazilian cities
+- **Economic Indicators**: 
+  - Live Dollar exchange rate
+  - SELIC rate
+  - IPCA (inflation) data
+- **Population Statistics**: Current population data with birth and death rates
+- **Economic Evolution**: Historical GDP and inflation trends
+- **Environmental Map**: Interactive map showing deforestation data
+- **Sector Analysis**:
+  - GDP distribution by sector
+  - Greenhouse gas emissions by sector
+- **City Rankings**: Population data for major cities
+- **Cost of Living Index**: Comparative living costs across Brazilian cities
 
-Este projeto tem como objetivo visualizar dados atualizados sobre a realidade brasileira por meio de gráficos, indicadores, rankings e mapas. A interface foi construída com **HTML, CSS, JavaScript** e bibliotecas como **Chart.js** e **Leaflet.js**.
+## Technologies Used
 
----
+- HTML5 & CSS3
+- JavaScript (ES6+)
+- Chart.js for data visualization
+- Leaflet.js for interactive maps
+- External APIs:
+  - OpenWeatherMap API
+  - Brazilian Central Bank API (Banco Central do Brasil)
+  - AwesomeAPI (Currency)
+  - IBGE API (Brazilian Institute of Geography and Statistics)
 
-## 📡 Funcionalidades
+## Setup
 
-✅ Dados em tempo real por meio de APIs:
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
 
-- ☁️ **Clima Atual** por cidade – via [OpenWeatherMap](https://openweathermap.org/)
-- 💱 **Cotação do Dólar** – via [AwesomeAPI](https://docs.awesomeapi.com.br/)
-- 📊 **Taxa Selic e IPCA** – via [Banco Central do Brasil](https://dadosabertos.bcb.gov.br/)
-- 💨 **Qualidade do Ar (AQI)** – via [IQAir API](https://www.iqair.com/world-air-quality-api)
+2. Open `index.html` in your web browser or set up a local server.
 
-📌 Indicadores simulados com base em dados reais:
+3. Update the API key in the JavaScript code:
+```javascript
+const weatherApiKey = "YOUR_API_KEY";
+```
 
-- 👥 População total, natalidade, mortalidade, expectativa de vida
-- 🧭 Evolução do PIB e inflação
-- 🌱 Emissão de gases por setor
-- 🗺️ Mapa de desmatamento e preservação (simulado)
+## Configuration
 
----
+The dashboard updates every 10 minutes by default. You can modify the update interval in the JavaScript code:
 
-## 🧪 Tecnologias e Bibliotecas
+```javascript
+const updateInterval = 10 * 60 * 1000; // 10 minutes in milliseconds
+```
 
-- HTML5, CSS3, JavaScript ES6
-- [Chart.js](https://www.chartjs.org/)
-- [Leaflet.js](https://leafletjs.com/)
-- [OpenWeatherMap API](https://openweathermap.org/api)
-- [AwesomeAPI](https://docs.awesomeapi.com.br/)
-- [Banco Central API (SGS)](https://dadosabertos.bcb.gov.br/)
-- [IQAir API](https://www.iqair.com/world-air-quality-api)
+## Features
 
-## 🌐 Publicação via GitHub Pages
+### Weather Widget
+- Real-time weather data for any Brazilian city
+- Temperature, humidity, and wind speed
+- Search functionality for different cities
 
-🔐 **Observação**: As chaves de API estão expostas no código (por limitação da plataforma). Recomenda-se utilizar chaves gratuitas com limite de uso e nenhuma permissão crítica.
+### Economic Indicators
+- Live Dollar/Real exchange rate
+- SELIC interest rate
+- Monthly IPCA inflation rate
 
-🌍 Acesse a versão online em: [https://github.com/elias001011/Dashboard-Brasil/](https://elias001011.github.io/Dashboard-Brasil/)
+### Interactive Map
+- Visualization of deforestation data
+- Color-coded regions
+- Interactive tooltips with detailed information
 
+### Charts and Graphs
+- Line charts for economic trends
+- Pie charts for sector distribution
+- Animated loading states
+- Responsive design
 
+## Styling
+
+The dashboard uses a dark theme with custom CSS variables for easy customization:
+
+```css
+:root {
+    --bg-color: #0a0a1a;
+    --card-bg: #141432;
+    --text-color: #ffffff;
+    --accent-color-1: #ff4d7c;
+    --accent-color-2: #ff8a3d;
+    --accent-color-3: #4dc9ff;
+    --accent-color-4: #8a56ff;
+}
+```
+
+## Responsive Design
+
+The dashboard is fully responsive with breakpoints at:
+- 1200px (tablet landscape)
+- 768px (tablet portrait)
+- 480px (mobile)
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenWeatherMap for weather data
+- Banco Central do Brasil for economic indicators
+- IBGE for demographic data
+- OpenStreetMap contributors for map data
